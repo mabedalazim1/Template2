@@ -1,3 +1,9 @@
+/* Start Variables*/
+:root {
+  --main-color: #19c8fa;
+}
+/* End Variables*/
+/* Start Global Rules*/
 * {
   padding: 0;
   margin: 0;
@@ -8,3 +14,103 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*Medim */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/*Larg */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules*/
+
+/* Start Header */
+header {
+  width: 100%;
+  height: 100vh;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .container::after {
+  content: "";
+  position: relative;
+  background-color: #a2a2a2;
+  position: absolute;
+  bottom: 0px;
+  height: 1px;
+  left: 15px;
+  width: calc(100% - 30px);
+}
+header .logo img {
+  height: 60px;
+}
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul {
+  display: flex;
+}
+header nav li a {
+  display: block;
+  padding: 40px 10px;
+  font-size: 14px;
+  transition: 0.3s;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+header nav li a:hover,
+header nav li a.active {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+header nav .search {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin-left: 30px;
+  border-left: 1px solid #fff;
+}
+header nav .search i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  font-size: 16px;
+  right: 0;
+}
+/* End Header */
