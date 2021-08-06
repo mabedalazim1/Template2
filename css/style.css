@@ -487,4 +487,19 @@ header nav .search i {
 .galary .galary-con .caption p {
   color: var(--main-color);
 }
+.Portfolio .more {
+  font-size: 18px;
+  height: 50px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--main-color);
+  display: block;
+  margin: 25px auto;
+  line-height: 0.8;
+}
+.Portfolio .more:hover {
+  color: #fff;
+}
 /* End Portfolio */
