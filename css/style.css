@@ -445,7 +445,8 @@ header nav .search i {
   margin-top: 60px;
 }
 .galary .galary-con {
-  flex-basis: 100%;
+  flex-basis: 96%;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
@@ -503,3 +504,51 @@ header nav .search i {
   color: #fff;
 }
 /* End Portfolio */
+/* Start  Vidoe */
+.video {
+  position: relative;
+}
+.video video {
+  width: 100%;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.video .text {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #fff;
+  background-color: var(--transpernt-color);
+  transform: translatey(-50%);
+  width: 100%;
+  height: 25%;
+  text-align: center;
+  z-index: 2;
+}
+.video .text h2 {
+  margin: 30px 0 25px;
+}
+
+.video .text p {
+  margin-bottom: 30px;
+}
+.video .text a {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+@media (max-width: 768px) {
+  .video .text {
+    height: 65%;
+  }
+}
+/* End  Vidoe */
