@@ -337,3 +337,78 @@ header nav .search i {
   }
 }
 /* End Services */
+/* Start Design */
+.design {
+}
+.design .design-img {
+  position: relative;
+  overflow: hidden;
+}
+.design img {
+  display: block;
+  height: 500px;
+  width: 100%;
+}
+.design .design-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.design {
+  position: relative;
+  overflow: hidden;
+}
+.design .phon {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  z-index: 3;
+  width: 30%;
+  left: 60px;
+}
+
+.design .design-contant {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 50%;
+  transform: translatey(-50%);
+  z-index: 3;
+  background-color: var(--transpernt-color);
+  color: #fff;
+  padding: 10px;
+}
+.design .design-contant h3 {
+  padding: 15px;
+  font-size: 28px;
+  letter-spacing: 3;
+  font-weight: normal;
+}
+.design .design-contant li {
+  padding: 15px;
+  font-size: 20px;
+}
+.design .design-contant li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+}
+@media (max-width: 768px) {
+  .design .phon {
+    display: none;
+  }
+  .design .design-contant {
+    width: 100%;
+  }
+}
+/* End Design */
+
+/* Start Potrfolio */
+/* End Potrfolio */
