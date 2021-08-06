@@ -12,7 +12,8 @@
   margin-top: 60px;
 }
 .main-title h2 {
-  font-size: 35px;
+  font-size: 38px;
+  font-weight: normal;
   color: #333;
   text-transform: uppercase;
   position: relative;
@@ -410,5 +411,28 @@ header nav .search i {
 }
 /* End Design */
 
-/* Start Potrfolio */
-/* End Potrfolio */
+/* Start Portfolio */
+.Portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.Portfolio ul {
+  margin: auto;
+  text-align: center;
+  margin: 40px 0;
+}
+.Portfolio ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.Portfolio ul li.active,
+.Portfolio ul li:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* End Portfolio */
