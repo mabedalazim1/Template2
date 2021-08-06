@@ -166,7 +166,7 @@ header nav ul {
 header nav li a {
   display: block;
   padding: 40px 10px;
-  font-size: 14px;
+  font-size: 18px;
   transition: 0.3s;
   color: #fff;
   position: relative;
@@ -434,5 +434,57 @@ header nav .search i {
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+}
+.Portfolio .galary img {
+  height: 100%;
+}
+.Portfolio .galary {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 25%;
+  margin-top: 60px;
+}
+.galary .galary-con {
+  flex-basis: 100%;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .galary .galary-con {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1199px) {
+  .galary .galary-con {
+    flex-basis: 25%;
+  }
+}
+.Portfolio .galary .galary-con img {
+  max-width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.galary .caption {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  transition: 0.4s;
+  bottom: -100%;
+}
+.galary .galary-con:hover .caption {
+  bottom: 0;
+}
+.galary .galary-con:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+.galary .galary-con .caption h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.galary .galary-con .caption p {
+  color: var(--main-color);
 }
 /* End Portfolio */
