@@ -590,5 +590,58 @@ header nav .search i {
   max-width: 80%;
   min-height: 330px;
 }
-
 /* End About Us */
+
+/* Start Stats*/
+.stats {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background: url(../images/about.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  background-position: center;
+}
+.stats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.stats .container {
+  position: relative;
+  z-index: 2;
+}
+.stats .number {
+  display: grid;
+  color: #fff;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-around;
+  background-color: var(--transpernt-color);
+  padding: 30px;
+  text-align: center;
+}
+
+.stats .number i {
+  display: flex;
+  color: #fff;
+  background-color: #000;
+  max-width: 40px;
+  min-height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 110px;
+  border-radius: 50%;
+}
+.stats .number .num {
+  font-size: 50px;
+  font-weight: bold;
+}
+.stats .number .sub-title {
+  margin-top: 10px;
+}
+/* End Stats*/
