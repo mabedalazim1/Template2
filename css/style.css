@@ -820,5 +820,85 @@ header nav .search i {
   margin-bottom: 20px;
   display: block;
 }
-
 /* End Quote */
+/* Start Pricing */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 30px;
+}
+.pricing .plans .plan {
+  padding-top: var(--section-padding);
+}
+.pricing .plans .plan .head {
+  border-top: 1px solid var(--main-color);
+  position: relative;
+}
+.pricing .plans .plan .head span::before {
+  content: "$";
+  position: absolute;
+  top: 85px;
+  left: 105px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 25px;
+}
+.pricing .plans .plan .head span::after {
+  content: "/Mo";
+  position: absolute;
+  bottom: 40px;
+  right: 75px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 25px;
+}
+.pricing .plans .plan .head h3 {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 27px;
+  padding-bottom: 25px;
+}
+.pricing .plans .plan .head span {
+  display: block;
+  font-size: 68px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.pricing .plans .plan ul {
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  margin-bottom: 40px;
+  position: relative;
+}
+.pricing .plans .plan li {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.pricing .plans .plan li:not(:last-child)::after {
+  content: "";
+  width: 140px;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.pricing .plans .plan .foot a {
+  border: 1px solid var(--main-color);
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  font-weight: bold;
+  color: #000;
+}
+/* End Pricing */
