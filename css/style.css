@@ -840,22 +840,22 @@ header nav .search i {
   position: relative;
 }
 .pricing .plans .plan .head span::before {
-  content: "$";
+  content: "$  ";
   position: absolute;
   top: 85px;
-  left: 105px;
   width: fit-content;
   height: fit-content;
   font-size: 25px;
+  margin-right: 15px;
 }
 .pricing .plans .plan .head span::after {
-  content: "/Mo";
+  content: " /Mo";
   position: absolute;
   bottom: 40px;
-  right: 75px;
   width: fit-content;
   height: fit-content;
   font-size: 25px;
+  margin-left: 15px;
 }
 .pricing .plans .plan .head h3 {
   padding-top: 30px;
@@ -869,6 +869,7 @@ header nav .search i {
   font-weight: bold;
   text-align: center;
   padding-bottom: 30px;
+  line-height: 2;
 }
 .pricing .plans .plan ul {
   border-top: 1px solid var(--main-color);
@@ -896,9 +897,72 @@ header nav .search i {
   text-align: center;
   display: block;
   width: fit-content;
-  margin: auto;
+  margin: 0 auto 50px;
   padding: 20px;
   font-weight: bold;
   color: #000;
 }
+.pricing .text {
+  margin-top: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.pricing .text a {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 30px;
+  font-weight: normal;
+  font-size: 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  margin: 30px auto;
+}
 /* End Pricing */
+
+/* Start Subscribe */
+.subscribe {
+  background-image: url("../images/contact.jpg");
+  background-size: cover;
+  height: 300px;
+  max-width: 100%;
+  position: relative;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subscribe .box {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.subscribe .box p {
+  display: block;
+  margin: auto;
+  width: 70%;
+  font-size: 24px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.subscribe .box .sub-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe .box .sub-form input[type="email"] {
+  padding: 20px;
+  border: 1px solid var(--main-color);
+  width: 400px;
+}
+
+/* End Subscribe */
