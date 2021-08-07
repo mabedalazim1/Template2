@@ -437,6 +437,7 @@ header nav .search i {
 }
 .Portfolio .galary img {
   height: 100%;
+  padding-bottom: 10px;
 }
 .Portfolio .galary {
   display: flex;
@@ -533,6 +534,7 @@ header nav .search i {
   text-align: center;
   z-index: 2;
 }
+
 .video .text h2 {
   margin: 30px 0 25px;
 }
@@ -548,7 +550,7 @@ header nav .search i {
 }
 @media (max-width: 768px) {
   .video .text {
-    height: 65%;
+    height: 100%;
   }
 }
 /* End  Vidoe */
@@ -734,6 +736,15 @@ header nav .search i {
 .our-skills .testimonials li.active,
 .our-skills .testimonials li:hover {
   background-color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .our-skills .contant {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .our-skills .bulltes ul {
+    margin-bottom: 40px;
+  }
 }
 .skills > div:nth-of-type(1) {
   margin-top: 100px;
