@@ -959,10 +959,39 @@ header nav .search i {
   align-items: center;
   justify-content: center;
 }
-.subscribe .box .sub-form input[type="email"] {
-  padding: 20px;
-  border: 1px solid var(--main-color);
-  width: 400px;
+@media (max-width: 767px) {
+  .subscribe .box .sub-form {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .subscribe .box p {
+    text-align: justify;
+  }
 }
-
+.subscribe .box .sub-form input[type="email"] {
+  padding-left: 60px;
+  border: 1px solid var(--main-color);
+  position: relative;
+  outline: none;
+  height: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 22px;
+}
+.subscribe .box .sub-form input[type="button"] {
+  border: 1px solid var(--main-color);
+  height: 50px;
+  position: absolute;
+  top: 0;
+  background-color: var(--main-color);
+  text-transform: uppercase;
+  padding: 0 5px;
+}
+.subscribe .box .sub-form i {
+  color: var(--main-color);
+  font-size: 32px;
+  position: absolute;
+  top: 7px;
+  margin-left: 13px;
+}
 /* End Subscribe */
